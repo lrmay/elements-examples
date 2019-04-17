@@ -5,7 +5,8 @@
 .example.example2 * {
   font-family: Proxima Nova, Consolas, Menlo, monospace;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500
+  padding-left: 5px;
 }
 
 .example.example2 .row {
@@ -17,8 +18,10 @@
 .example.example2 .field {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin: 0 10px;
+  border: 1px solid;
+  border-radius: 4px;
 }
 
 .example.example2 .field.half-width {
@@ -33,17 +36,17 @@
 .example.example2 label {
   position: absolute;
   width: 100%;
-  left: 0;
+  left: 8px;
   bottom: 8px;
   color: #cfd7df;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+ /* white-space: nowrap;
   transform-origin: 0 50%;
   cursor: text;
   transition-property: color, transform;
   transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);*/
 }
 
 .example.example2 .input {
@@ -54,7 +57,6 @@
   padding-bottom: 7px;
   color: #32325d;
   background-color: transparent;
-  border: 1px solid;
 }
 
 .example.example2 .input::-webkit-input-placeholder {
@@ -100,13 +102,11 @@
 
 .example.example2 .input.focused + label,
 .example.example2 .input:not(.empty) + label {
-  color: #aab7c4;
-  transform: scale(0.85) translateY(-25px);
-  cursor: default;
+  color: #8F989D;
 }
 
 .example.example2 .input.focused + label {
-  color: #24b47e;
+  color: #8F989D;
 }
 
 .example.example2 .input.invalid + label {
@@ -114,7 +114,7 @@
 }
 
 .example.example2 .input.focused + label + .baseline {
-  background-color: #24b47e;
+  background-color: #8F989D;
 }
 
 .example.example2 .input.focused.invalid + label + .baseline {
